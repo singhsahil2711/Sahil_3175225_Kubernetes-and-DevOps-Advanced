@@ -12,7 +12,7 @@ This project demonstrates deploying and managing a database and an API service w
 
 ## Repository and Docker URLs
 
-- **GitHub Repository:** [Repository URL](<repository-url>)
+- **GitHub Repository:** [Repository URL](https://github.com/singhsahil2711/Sahil_Kubernetes-and-DevOps-Advanced)
 - **Docker Hub Image for API Service:** [Docker Hub URL](https://hub.docker.com/repository/docker/singhsahil2711/db-access-service/general)
 
 ## Showcase
