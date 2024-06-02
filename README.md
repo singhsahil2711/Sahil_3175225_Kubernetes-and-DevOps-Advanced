@@ -11,33 +11,9 @@ This project demonstrates deploying and managing a database and an API service w
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
 - [Repository and Docker URLs](#repository-and-docker-urls)
 - [Service API Tier](#showcase)
 - [Video Demonstration](#video-demonstration)
-
-## Project Structure
-.
-├── k8s
-│ ├── db
-│ │ ├── statefulset.yaml
-│ │ ├── service.yaml
-│ │ ├── configmap.yaml
-│ │ ├── secret.yaml
-│ │ └── persistentvolumeclaim.yaml
-│ ├── api
-│ │ ├── deployment.yaml
-│ │ ├── service.yaml
-│ │ ├── configmap.yaml
-│ │ └── secret.yaml
-│ ├── hpa.yaml
-├── src
-│ ├── api
-│ │ ├── Dockerfile
-│ │ ├── app.py
-│ └── db
-│ └── init-db.sql
-└── README.md
 
 ## Repository and Docker URLs
 
