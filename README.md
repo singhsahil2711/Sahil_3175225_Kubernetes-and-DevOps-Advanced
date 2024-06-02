@@ -17,27 +17,26 @@ This project demonstrates deploying and managing a database and an API service w
 - [Video Demonstration](#video-demonstration)
 
 ## Project Structure
+.
 ├── k8s
 │ ├── db
-│ │ ├── sql-stateful-set.yaml
-│ │ ├── headless-sql-svc.yaml
-│ │ ├── sql-config-map.yaml
-│ │ ├── sql-secret.yaml
-│ │ └── sql-pv.yaml
-│ │ └── sql-pvc.yaml
+│ │ ├── statefulset.yaml
+│ │ ├── service.yaml
+│ │ ├── configmap.yaml
+│ │ ├── secret.yaml
+│ │ └── persistentvolumeclaim.yaml
 │ ├── api
-│ │ ├── app-deployment.yaml
-│ │ ├── app-horizontalpodscaling.yaml
-│ │ ├── app-service.yaml
-│ │ ├── app-config-map.yaml
-│ │ └── app-secret.yaml
+│ │ ├── deployment.yaml
+│ │ ├── service.yaml
+│ │ ├── configmap.yaml
+│ │ └── secret.yaml
+│ ├── hpa.yaml
 ├── src
 │ ├── api
 │ │ ├── Dockerfile
-│ │ ├── app.js
-│ │ ├── package.js
-│ │ ├── package-lock.js
-└── insert-query.sql
+│ │ ├── app.py
+│ └── db
+│ └── init-db.sql
 └── README.md
 
 ## Repository and Docker URLs
