@@ -22,8 +22,7 @@ This project demonstrates deploying and managing a database and an API service w
 
 ## Showcase
 
-**URL to access Service API**
-   - 
+- **URL to access Service API tier** [API Service URL](<repository-url>)
 
 ## Video Demonstration
 
