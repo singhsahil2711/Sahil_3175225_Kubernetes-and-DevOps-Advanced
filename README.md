@@ -10,14 +10,16 @@ This project demonstrates deploying and managing a database and an API service w
 - [Service API Tier](#showcase)
 - [Video Demonstration](#video-demonstration)
 
-## Repository and Docker URLs
+## Repository and Docker Hub URL
 
 - **GitHub Repository:** [Repository URL](https://github.com/singhsahil2711/Sahil_Kubernetes-and-DevOps-Advanced)
-- **Docker Hub Image for API Service:** [Docker Hub URL](https://hub.docker.com/repository/docker/singhsahil2711/db-access-service/general)
+- **Docker Hub Image for API Service:** [Docker Hub URL](https://hub.docker.com/r/singhsahil2711/db-access-service)
 
 ## Showcase
 
-- **URL to access Service API tier** [API Service URL](<repository-url>)
+- **URL to access Service API tier** [API Service URL](http://34.72.15.36/)
+- **Endpoint to retrieve records from DB in JSON** [API Service URL](http://34.72.15.36/records)
+- **Endpoint to retrieve records formatted in HTML table and with pagination** [API Service URL](http://34.72.15.36/formatted-records)
 
 ## Video Demonstration
 
