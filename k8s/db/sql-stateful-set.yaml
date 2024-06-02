@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql-demo-pod
+  namespace: nagpdemo
+  labels:
+    name: mysql-demo-pod
+    app: mysql-k8s-deployment
+spec:
+  serviceName: mysql-demo-pod
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-k8s-deployment
+      name: mysql-demo-pod
+  template:
+    metadata:
+      labels:
+        app: mysql-k8s-deployment
+        name: mysql-demo-pod
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:8.0.32
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-credentials
+                  key: root-password
+          volumeMounts:
+            - name: mysql-data
+              mountPath: /var/lib/mysql
+            - name: mysql-initdb
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: mysql-initdb
+          configMap:
+            name: mysql-config
+        - name: mysql-data
+          persistentVolumeClaim:
+            claimName: mysql-pvc

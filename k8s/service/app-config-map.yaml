@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: db-config
+  labels:
+    name: db-config
+    app: nodejs-k8-api-service
+  namespace: nagpdemo
+data:
+  NODE_ENV: nagpdemo
+  MYSQL_HOST: mysql-demo-pod.nagpdemo.svc.cluster.local
+  MYSQL_DATABASE: customers-db
+  MYSQL_DB_PORT: '3306'
