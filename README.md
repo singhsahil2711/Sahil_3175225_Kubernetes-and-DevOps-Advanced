@@ -1,8 +1,3 @@
-kubectl exec --stdin --tty pod/mysql-demo-pod-0 -- /bin/bash
-
-kubectl rollout status deployment api-service -n nagpdemo
-
-
 # NAGP 2024 Technology Band III Batch Workshop on Kubernetes & DevOps
 
 ## Assignment Overview
