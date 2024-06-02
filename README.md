@@ -7,7 +7,7 @@ kubectl rollout status deployment api-service -n nagpdemo
 
 ## Assignment Overview
 
-This project demonstrates deploying and managing a database and an API service within a Kubernetes (K8s) cluster, implementin ConfigMaps, Secrets, and horizontal scaling using a Horizontal Pod Autoscaler (HPA).
+This project demonstrates deploying and managing a database and an API service within a Kubernetes (K8s) cluster, implementing ConfigMaps, Secrets, and horizontal scaling using a Horizontal Pod Autoscaler (HPA).
 
 ## Table of Contents
 
