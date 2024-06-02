@@ -25,7 +25,7 @@ spec:
           image: singhsahil2711/db-access-service:v2
           resources:
             requests:
-              cpu: 100m
+              cpu: 75m
               memory: 128Mi
           ports:
             - containerPort: 3000
