@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: api-container
-          image: singhsahil2711/db-access-service:v2
+          image: singhsahil2711/db-access-service:latest
           resources:
             requests:
               cpu: 75m
